@@ -1,0 +1,415 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Anybody:ital,wght@0,100..900;1,100..900&family=Heebo:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Poppins", sans-serif;
+    background-color: #dfdfd8;
+}
+.container{
+    width: min(90% , 1120px);
+    margin-inline: auto;
+   
+}
+header{
+    background-color: #fafaf6;
+    height:4.5rem;
+    position: sticky;
+    top: 0;
+    width: 100%;
+}
+.Desktop-menu{
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+.linkss{
+    display: flex;
+    gap: 20px;
+}
+.linkss li {
+    list-style: none;
+}
+.linkss li a{
+    text-decoration: none;
+    font-size: 1.25rem;
+    color: #2b2b2b;
+}
+.linkss li a:hover{
+    color: #5f73db;
+}
+.Desktop-menu h1{
+    font-size: 1.5625rem;
+    font-weight:700 ;
+}
+.hambuger{
+    display: none;
+}
+.mobile-menu{
+    display: none;
+}
+
+.mobile-menu-action{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+     
+}
+ 
+.btn-primary , .btn-info{
+      display: inline-block;
+      background-color: #5f73db;
+      padding: 20px;
+      text-align: center;
+      margin: 5px;
+      border-radius: 5px;
+      text-decoration: none;
+      font-size: 1.25rem;
+}
+.btn-info{
+    background-color: transparent;
+    border: 1px solid white;
+}
+.hero{
+    height: calc(100vh - 4.5rem);
+    background: linear-gradient(rgba(0,0,0,0.8), rgba(238, 110, 135, 0.7)) , url("https://images.unsplash.com/photo-1500622944204-b135684e99fd?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bmF0dXJhbHxlbnwwfHwwfHx8MA%3D%3D") no-repeat center/cover; ;
+  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 2.25rem;
+    color: wheat;
+    
+}
+.hero .container1 .btn{
+   display: flex;
+   flex-direction: column;
+   /* margin-left: 10rem; */
+   margin-inline: auto;
+   font-size: 2rem;
+   padding: 8px;
+   background-color: #1a3be1;
+   border: none;
+   color: white;
+   border-radius: 8px;
+}
+.yogo{
+    height: 90vh;
+    background:  linear-gradient(rgba(44, 44, 44, 0.5) , rgba(70, 69, 69, 0.5)) , url("https://media.istockphoto.com/id/2193172436/photo/serious-male-yoga-instructor-practicing-stretching-leg-exercise-in-green-summer-meadow.webp?a=1&b=1&s=612x612&w=0&k=20&c=WTiEBl_FrUda2TJ2kcedYmwtoMWnLNwPnsJRoIVoZM8=") no-repeat center/cover;
+    margin-top: 6rem;
+    border-radius: 25px;
+    display: flex;
+    align-items: flex-end;
+   
+}
+.yogo .content{
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 728px;
+    margin-inline: auto;
+    margin-block: auto;
+    
+}
+ .yogo .content h1{
+    font-size: 3.125rem;
+    font-weight: 700;
+    color: wheat;
+    text-align: center;
+ }
+ .yogo .content p{
+    font-size: 1.25rem;
+    color: #fafaf6;
+    text-align: center;
+ }
+ img{
+    width: 100%;
+ }
+ .container{
+    margin-top: 4rem;
+ }
+ .boxes{
+    display: grid;
+    grid-template-columns: repeat(2 , 1fr);
+    gap: 2.5rem;
+    padding: 15px;
+     
+ }
+ .box img{
+    border-radius: 50px;
+ }
+ .box{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+     
+ }
+ .boxes .box h2{
+    font-size: 25px;
+    line-height: 32px;
+    font-weight: 400;
+    color: #2b2b2b;
+ }
+ .boxes .box p{
+    font-size: 15px;
+    line-height: 26px;
+    font-weight: 400;
+    color: #2b2b2b;
+ }
+ .boxes .box .btn{
+    background-color: #1a3be1;
+    color: white;
+    padding: 16px;
+    border: none;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 14px;
+ }
+ .perfect-condition{
+    height: 438px;
+    background:  linear-gradient(rgba(44, 44, 44, 0.5) , rgba(70, 69, 69, 0.5)) , url("  https://mobirise.com/extensions/retreatm5/outdoor-yoga-classes/assets/images/pexels-andrea-piacquadio-3779750.jpeg")  no-repeat center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* padding-block: 2rem; */
+    margin-top: 3rem;
+    background-attachment: fixed;
+    /* transform: translatex(0%);
+    transition: transform 0.3s ease-in-out; */
+     
+ }
+
+ .perfect-condition h2{
+     font-size: 3.125rem ;
+     font-weight: 400 ;
+     color: #2a2a2a;
+      
+      
+ }
+ .perfect-condition p{
+    color: #2a2a2a;
+    font-size: 1.25rem;
+    font-weight: 400;
+ }
+ .message{
+    height: 355.188px;
+    background:  linear-gradient(rgba(44, 44, 44, 0.5) , rgba(70, 69, 69, 0.5)) , url("  https://media.istockphoto.com/id/2193265603/photo/calm-man-practice-yoga-meditate-at-home.webp?a=1&b=1&s=612x612&w=0&k=20&c=L6JQwJQ70XEERpT6OGaX3FlKNDLoYR4_DWaU6TLISgU=")  no-repeat center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* padding-block: 2rem; */
+    margin-top: 3rem;
+     
+ }
+ .cbox{
+    border-radius: 10px;
+    border: 1px solid #1a3be1;
+    background-color: #fafaf6;
+    color: #2a2a2a;
+    display: flex;
+    justify-content: space-between;
+    height: 30%;
+    align-items: center;
+    padding: 1rem;
+ }
+ .cbox .btn{
+    background-color: #1a3be1;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    border: none;
+ }
+ footer{
+    background-color: #2a2a2a;
+    color: white;
+    font-size: 1.25rem;
+    padding: 2rem;
+ }
+ 
+ .blogs{
+    height: 70%;
+    display: grid;
+    grid-template-columns: repeat(3 ,1fr);
+    gap: 30px;
+    text-align: center;
+     
+ }
+ .blogs .blog img{
+    border-radius: 16px;
+    padding: 10px;
+ }
+ .blogs .blog{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+ }
+ .blog .btn{
+      background-color: #1a3be1;
+      color: white;
+      padding: 20px;
+      border-radius: 10px;
+      border: none;
+      width: 50%;
+      margin-left: 29%;
+ }
+ 
+ 
+      /* Tablet & mobile phones */
+      @media(max-width: 768px){
+             .Desktop-menu{
+                display: none;
+             }
+             header{
+                height: 0;
+             }
+             i{
+             z-index: 11111;
+            }
+             .hambuger{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                position: absolute;
+                top: 20%;
+                right: 10%;
+                background-color: #5f73db;
+                color: white;
+                /* padding: 15px; */
+                width: 50px;
+                height: 50px;
+                font-size: 2.00rem;
+                border-radius: 50%;
+             }
+         
+           .mobile-menu{
+            display: flex;
+            position: fixed;
+            background-color: #2b2b2b;
+            inset: 0 0 0 0;
+            justify-content: center;
+            transform: translateX(0%);
+            transition: transform 1s ease-in-out;
+           
+           }
+           .mobile-menu[data-visible ="false"]{
+              transform: translateX(100%);
+           }
+           .hambuger i[data-visible="true"]{
+                  display: block;
+           }
+           .hambuger i[data-visible="false"]{
+            display: none;
+     }
+           .mobile-menu .navigation{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 80%;
+            margin-top: 5rem;
+            /* color: white; */
+            gap: 2.5rem;
+            
+           }
+           
+           .mobile-menu .navigation .linkss{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+           
+           }
+           .mobile-menu h1{
+             font-size: 2.3125rem;
+             color: white;
+             font-weight: 700;
+             border-bottom: 1px solid white;
+             padding: 10px;
+           }
+           .mobile-menu a{
+            color: white  !important;
+           }
+          .hero{
+            height: 100vh;
+          }
+          .hero h1{
+            font-size: 3.0625rem;
+          }
+          .yogo .content h1{
+            font-size: 2.125rem;
+          }
+          .yogo .content p{
+            font-size: 1.325rem;
+          }
+          .yogo .content{
+            margin-bottom: 2rem;
+          }
+          .boxes{
+            grid-template-columns: 1fr;
+          }
+          .perfect-condition h2{
+            font-size: 1.125rem;
+          
+            
+          }
+          .perfect-condition p{
+              font-size: 1.125rem;
+          }
+          .cbox{
+            display: flex;
+            flex-direction: column;
+            height: 70%;
+             
+          }
+          .message{
+            position: relative;
+            width: 100%;
+            padding: 1rem;
+            width: 100%;
+            height: 680px;
+          }
+         /* .message .cbox h2{
+                  font-size: 10px;
+                  
+          } */
+          .message .cbox .btn{
+             margin-bottom: 20.5rem;
+             position: absolute;
+             top: 22.5rem;
+             padding: 40px 130px;
+             display: flex;
+             flex-direction: column;
+             /* width: 160px;
+             height: 100px; */
+             font-size: 25px;
+             text-align: center;
+             border-radius: 8px;
+          }
+          .blog{
+            display: flex;
+            flex-direction: column;
+            
+          }
+          .blog h2{
+            font-size: 1.325rem;
+           
+          }
+          .blog p{
+            font-size: 1.425rem;
+          }
+          
+         
+                
+      }
+ 
+
+   
+
